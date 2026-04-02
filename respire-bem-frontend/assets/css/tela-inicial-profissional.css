@@ -1,0 +1,343 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 1. Garante que a página ocupe 100% da altura da tela */
+html {
+  height: 100%;
+}
+
+
+body {
+  min-height: 100vh;      /* Altura mínima de 100% da janela */
+  display: flex;          /* Ativa o Flexbox */
+  flex-direction: column; /* Empilha: Cabeçalho -> Conteúdo -> Rodapé */
+  
+  /* Mantenha suas outras cores de fundo aqui, ex: */
+  background-color: #D6DEE6; 
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000; /* Tom de azul ajustado para o menu */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px; /* Adiciona um espaço para a linha aparecer embaixo */
+}
+
+nav ul li a:hover {
+  color: #3E9CB2; /* Efeito hover para o menu */
+  border-bottom: 2px solid #3E9CB2; /* Linha de 2px abaixo do item do menu */
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D; /* Cor do botão "Sair" ajustada */
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2; /* Efeito na cor azul para o botão "Sair" */
+  color: white;
+}
+
+/* Main container*/
+main {
+  flex-grow: 1; /* Isso é o que empurra o rodapé para baixo */
+  padding: 40px;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #3E9CB2; /* Tom de azul no Olá, Profissional */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Este é o P global que estava causando o problema */
+p {
+  font-size: 16px; /* Parágrafo na cor cinza */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tres-colunas {
+ display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px; /* Adiciona um espaço entre coluna e texo superior  */
+}
+
+.tres-colunas div {
+ background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+    width: 30%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 0px #3E9CB2;
+}
+
+.tres-colunas div h3 {
+  font-size: 2.5em;
+  color: #474646; /* Tom de verde ajustado */
+}
+
+/* Aplicando o reset de 'p' aqui dentro */
+.tres-colunas div p {
+  color: #333;
+  margin-top: 10px;
+  font-size: 16px; /* Garantindo o tamanho certo aqui */
+  margin-bottom: 10px; /* Menor que o global */
+}
+
+/* Efeito de relevo ao passar o mouse */
+.pacientes-ativos:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.consultas-hoje:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.relatorios:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.acessar01 {
+  padding: 10px 20px;
+  box-shadow: 2px 2px 8px #639D8C;
+  background-color: #639D8C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.acessar02 {
+    padding: 10px 20px;
+  box-shadow: 2px 2px 8px #8675A2;
+  background-color: #8675A2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.acessar03 {
+        padding: 10px 20px;
+  box-shadow: 2px 2px 8px #3E9CB2;
+  background-color: #3E9CB2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.acessar:hover {
+  color: #3E9CB2;
+  border-radius: 20px;
+}
+
+/* Agenda */
+.agenda {
+  background-color: #E1F4F9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.agenda h2 {
+  color: #3E9CB2;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.agenda p {
+  color: #3E9CB2;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.agenda-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-item span {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.status.confirmado {
+  background-color: #639D8C;
+  color: #ffffff;
+}
+
+.status.pendente {
+  background-color: #D4864F;
+  color: #ffffff;
+}
+
+/* Notificações Recentes */
+.notificacoes {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: 0.3s;
+  box-shadow: 0px 4px 0px #3E9CB2;
+}
+
+.notificacoes:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.notificacoes h3 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.notificacoes p {
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 5px; /* Reduzido do global */
+}
+
+/* Ações Rápidas */
+.acoes-rapidas {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.acoes-rapidas h3 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.acoes-rapidas .btn {
+  background-color: #7D7D7D;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 2px solid transparent;
+  flex: 1;
+}
+
+.acoes-rapidas .btn:hover {
+  background-color: #639D8C;
+}
+
+.acoes-rapidas .btn:nth-child(2) {
+  background-color: #3E9CB2;
+}
+
+.acoes-rapidas .btn:nth-child(2):hover {
+  background-color: #639D8C;
+}
+
+.acoes-rapidas .btn:nth-child(3) {
+  background-color: #8675A2;
+}
+
+.acoes-rapidas .btn:nth-child(3):hover {
+  background-color: #639D8C;
+}
+
+
+
+/* Esta regra cuida SÓ da caixa */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+/* Esta regra cuida SÓ do texto */
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0;
+}

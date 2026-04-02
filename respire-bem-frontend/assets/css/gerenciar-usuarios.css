@@ -1,0 +1,424 @@
+/* =========================================
+   1. ESTILOS GLOBAIS (Padrão do Site)
+   ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #e3eaf2; 
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-width: 120px;
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D; 
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2; 
+  color: white;
+}
+
+main {
+  padding: 40px;
+  flex-grow: 1;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- CORREÇÃO DO ALINHAMENTO DO TÍTULO --- */
+h1 {
+  color:#3E9CB2; 
+  margin-bottom: 20px;
+  font-size: 2em;
+  
+  /* Faz o título ter o mesmo tamanho e posição dos cards */
+  width: 100%;
+  max-width: 900px;    /* Mesma largura dos cards */
+  align-self: center;  /* Centraliza a "caixa" do título na tela */
+  text-align: left;    /* Mantém o texto alinhado à esquerda dentro da caixa */
+}
+
+/* --- CORREÇÃO DO ALINHAMENTO DO PARÁGRAFO --- */
+main p { 
+  color: #555555;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  
+  /* Faz o parágrafo ter o mesmo tamanho e posição dos cards */
+  width: 100%;
+  max-width: 900px;    /* Mesma largura dos cards */
+  align-self: center;  /* Centraliza a "caixa" do parágrafo na tela */
+  text-align: left;    /* Mantém o texto alinhado à esquerda */
+}
+
+/* =========================================
+   2. ESTILO PADRÃO DO MENU (Sublinhado)
+   ========================================= */
+
+.header-container nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-container nav ul li {
+  margin-right: 20px;
+}
+
+.header-container nav ul li a {
+  color: #000000; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent; 
+}
+
+.header-container nav ul li a:hover {
+  color: #3E9CB2; 
+  border-bottom: 2px solid #3E9CB2;
+}
+
+.header-container nav ul li a.active {
+  color: #3E9CB2;
+  border-bottom: 2px solid #3E9CB2;
+}
+
+/* =========================================
+   3. ESTILOS DA PÁGINA
+   ========================================= */
+
+/* Card visual para colaboradores e profissionais */
+.colaboradores,
+.profissionais-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 32px; 
+  margin-bottom: 32px;
+  
+  /* Aqui está a largura que copiamos para o título */
+  max-width: 900px; 
+  width: 100%;
+  margin-left: auto; /* Centraliza */
+  margin-right: auto; /* Centraliza */
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.colaboradores-header,
+.profissionais-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+  justify-content: flex-start;
+  position: relative;
+  padding: 0;
+}
+
+/* Botão fica à direita */
+.colaboradores-header .btn-cadastrar-colaborador,
+.profissionais-header .btn-cadastrar-profissional {
+  margin-left: auto;
+}
+
+.colaboradores-header img,
+.profissionais-header img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.colaboradores-header h2,
+.profissionais-header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #060707;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+/* Botões de cadastro */
+.btn-cadastrar-colaborador{
+  background-color: #639D8C; 
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: left;
+}
+.btn-cadastrar-profissional {
+  background-color: #3E9CB2; 
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: left;
+}
+.btn-cadastrar-colaborador:hover {
+    background-color: #4a7d6e;
+}
+.btn-cadastrar-profissional:hover {
+    background-color: #398798;
+}
+
+
+/* Estilo do select de busca */
+#buscaColaborador,
+#buscaProfissional {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #B7C2D0;
+  font-size: 16px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 100%;
+  background: #F6F8FA;
+  font-family: 'Inter', sans-serif; 
+}
+#buscaColaborador:focus,
+#buscaProfissional:focus {
+    outline: none;
+    border-color: #639D8C;
+    background-color: #fff;
+}
+
+
+/* Tabelas */
+#tabelaColaboradores,
+#tabelaProfissionais {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+#tabelaColaboradores th, #tabelaColaboradores td,
+#tabelaProfissionais th, #tabelaProfissionais td {
+  border: none;
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 15px;
+}
+#tabelaColaboradores th {
+  background-color: #F6F8FA;
+  color: #639D8C;
+  font-weight: 600;
+}
+
+ #tabelaProfissionais th {
+  background-color: #F6F8FA;
+  color: #3E9CB2;
+  font-weight: 600;
+}
+#tabelaColaboradores tr, #tabelaProfissionais tr {
+  border-bottom: 1px solid #E3E8F0;
+}
+#tabelaColaboradores tr:last-child, #tabelaProfissionais tr:last-child {
+  border-bottom: none;
+}
+
+/* Botões de ação nas tabelas */
+#tabelaColaboradores button, #tabelaProfissionais button {
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin-right: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+/* Botão Excluir - Vermelho (Transparente) */
+.btn-excluir {
+  background-color: transparent;
+  color: #d23737;
+  border: 2px solid #d23737;
+}
+
+.btn-excluir:hover {
+  background-color: rgba(210, 55, 55, 0.1);
+}
+
+/* Botão Editar Colaborador - Verde (Transparente) */
+.btn-editar-colab {
+  background-color: transparent;
+  color: #639D8C;
+  border: 2px solid #639D8C;
+}
+
+.btn-editar-colab:hover {
+  background-color: rgba(99, 157, 140, 0.1);
+}
+
+/* Botão Editar Profissional - Azul (Transparente) */
+.btn-editar-prof {
+  background-color: transparent;
+  color: #3E9CB2;
+  border: 2px solid #3E9CB2;
+}
+
+.btn-editar-prof:hover {
+  background-color: rgba(62, 156, 178, 0.1);
+}
+
+/* Paginação */
+.paginacao-colaboradores, .paginacao-profissionais {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.paginacao-colaboradores button, .paginacao-colaboradores span {
+  border: 1px solid #B7C2D0;
+  background: #fff;
+  color: #639D8C;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.paginacao-profissionais button, .paginacao-profissionais span {
+  border: 1px solid #B7C2D0;
+  background: #fff;
+  color: #3E9CB2;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+/* =========================================
+   4. ESTILOS DO MODAL (Padrão Bootstrap)
+   ========================================= */
+
+.modal-header h1 {
+  color: #3E9CB2 !important; 
+  font-size: 1.5em !important;
+  margin-bottom: 0; 
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body label {
+  color: #333;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.modal-body input[type="text"],
+.modal-body input[type="email"],
+.modal-body input[type="password"],
+.modal-body select {
+  padding: 12px;
+  border: 1px solid #D6DEE6; 
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f7f7f7;
+  width: 100%; 
+}
+
+.modal-body input:focus,
+.modal-body select:focus {
+  border-color: #3E9CB2; 
+  outline: none; 
+  background-color: #fff;
+}
+
+/* Botão de cadastrar dentro do modal */
+.btn-login-modal {
+  background-color: #639D8C; 
+  border-color: #639D8C;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-login-modal:hover {
+  background-color: #4a7d6e; 
+}
+
+
+/* =========================================
+   5. RODAPÉ (Padrão do Site)
+   ========================================= */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+}

@@ -1,0 +1,283 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #D6DEE6; /* Cor de fundo ajustada */
+  color: #333;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000; /* Tom de azul ajustado para o menu */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3E9CB2; /* Efeito hover para o menu */
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D; /* Cor do botão "Sair" ajustada */
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2; /* Efeito na cor azul para o botão "Sair" */
+  color: white;
+}
+
+/* Main container*/
+main {
+  padding: 40px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+h1 {
+  color: #3E9CB2; /* Tom de azul no Olá, Empresa*/
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px; /*Parágrafo na cor cinza*/
+  color: #333;
+  margin-bottom: 20px;
+  
+}
+
+.tres-colunas {    
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 20px; /* Adiciona um espaço entre coluna e texo superior  */
+}
+
+/*  três colunas ( 01 )*/
+/*--------- 01 ---------*/
+.colaboradores-ativos {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.colaboradores-ativos h3 {
+  font-size: 2.5em;
+  color: #639D8C; /* Tom de verde ajustado */
+}
+
+.colaboradores-ativos p {
+  color: #333;
+  margin-top: 10px;
+}
+/*-------- 02 ----------*/
+.taxa-participacao {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.taxa-participacao h3 {
+  font-size: 2.5em;
+  color: #639D8C; /* Tom de verde ajustado */
+}
+
+.taxa-participacao p {
+  color: #333;
+  margin-top: 10px;
+}
+/*-------- 03 ---------*/
+.bem-estar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.bem-estar h3 {
+  font-size: 2.5em;
+  color: #639D8C; /* Tom de verde ajustado */
+}
+
+.bem-estar p {
+  color: #333;
+  margin-top: 10px;
+}
+
+
+
+
+/*  três colunas ( 02 )*/
+/*----------------------------------------------------------*/
+.card-container {    
+  display: block; /* Cards empilhados verticalmente */
+  margin-top: 10px;
+  
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #3E9CB2;
+  text-align: left;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card  {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card h3 {
+  color: #000000; /* Tom de verde ajustado */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #639D8C; /* Cor dos links ajustada */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card a:hover {
+
+  color: #3E9CB2; /* Efeito hover nos links */
+   border-radius: 20px;
+   border-color: #000000;
+}
+
+.card.gerenciar-usuarios {
+  background-color: #ffffff; /* Cor ajustada para Gerenciar Usuários */
+   
+}
+
+.card.gerenciar-usuarios a{
+  
+  box-shadow: 2px 2px 8px #3E9CB2;
+  color: white;
+  background-color: #3E9CB2; 
+  border: 2px solid #3E9CB2;
+  padding: 4px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  
+}
+
+
+
+.card.gestao-colaboradores {
+  background-color: #ffffff; /* Cor ajustada para Gestão de Colaboradores */
+}
+
+.card.gestao-colaboradores a{
+  box-shadow: 2px 2px 8px #639D8C;
+  color: white;
+  background-color: #639D8C; 
+  border: 2px solid #639D8C;
+  padding: 4px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card.dashboard-analitico {
+  background-color: #ffffff; /* Cor ajustada para Dashboard Analítico */
+}
+
+.card.dashboard-analitico a{
+     box-shadow: 2px 2px 8px #8675A2;
+  color: white;
+  background-color: #8675A2; 
+  border: 2px solid #8675A2;
+  padding: 4px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra nos cards */
+}
+
+.card.gerenciar-usuarios:hover {
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.gestao-colaboradores:hover {
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.dashboard-analitico:hover {
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Usuários - Respire Bem</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="../../assets/css/gerenciar-usuarios.css">
+</head>
+<body>
+  <header> 
+    <div class="header-container">
+      <img src="../../assets/icons/imag.01.png" alt="Logo Respire Bem" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="tela-inicial-empresa.html">Página Inicial</a></li>
+          
+          <li><a href="gerenciar-usuarios.html" class="active">Gerenciar Usuários</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="gestao-de-colaboradores.html">Gestão de Colaboradores</a></li>
+        </ul>
+      </nav>
+      <a href="../index.html" class="sair">Sair</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+        <h1>Gerenciar Usuários</h1>
+        <p>Gerencie colaboradores e profissionais vinculado a empresa</p>
+
+        <div class="coluna1">
+            <div class="colaboradores">
+                <div class="colaboradores-header">
+                  <img src="../../assets/icons/colaboradores.png" alt="colaboradores">
+                  <h2>Colaboradores</h2>
+                  <button class="btn-cadastrar-colaborador" data-bs-toggle="modal" data-bs-target="#modalColaborador">+ Cadastrar Colaborador</button>
+                </div>
+                
+                  <input type="text" id="buscaColaborador" name="buscaColaborador" placeholder="Buscar colaborador por nome..." class="campo-busca">
+
+                <table id="tabelaColaboradores">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Email</th>
+                      <th>Departamento</th>
+                      <th>Status</th>
+                      <th>Senha</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    </tbody>
+                </table>
+                <div class="paginacao-colaboradores">
+                  <button>&larr; Anterior</button>
+                  <span class="active">1</span>
+                  <button>2</button>
+                  <button>3</button>
+                  <button>Próximo &rarr;</button>
+                </div>
+            </div>
+          </div>
+          
+          <div class="coluna2">
+            <div class="profissionais-card">
+              <div class="profissionais-header">
+                <img src="../../assets/icons/bem-estar.png" alt="profissionais">
+                <h2>Profissionais da Saúde</h2>
+                <button class="btn-cadastrar-profissional" data-bs-toggle="modal" data-bs-target="#modalProfissional">+ Cadastrar Profissional</button>
+              </div>
+                    <input type="text" id="buscaProfissional" name="buscaProfissional" placeholder="Buscar profissional por nome..." class="campo-busca">
+
+
+              <table id="tabelaProfissionais">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Especialidade</th>
+                    <th>Status</th>
+                    <th>Senha</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  </tbody>
+              </table>
+
+              <div class="paginacao-profissionais">
+                <button>&larr; Anterior</button>
+                <span class="active">1</span>
+                <button>2</button>
+                <button>3</button>
+                <button>Próximo</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalColaborador" tabindex="-1" aria-labelledby="modalColaboradorLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalColaboradorLabel">Cadastrar Colaborador</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formColaborador">
+            <label for="nomeColaborador">Nome:</label>
+            <input type="text" id="nome" name="nomeColaborador" required>
+            <label for="email">Email:</label>
+            <input type="email" id="emailColaborador" name="emailColaborador" required>
+
+            <label for="departamento">Departamento:</label>
+            <!-- O JS vai preencher as options aqui com IDs reais do banco -->
+            <select id="departamento" name="departamento" required>
+              <option value="" disabled selected>Carregando departamentos...</option>
+            </select>
+
+            <label for="statusColaborador">Status:</label>
+            <select id="statusColaborador" name="statusColaborador">
+              <!-- O JS converte "Ativo" -> true, "Inativo" -> false -->
+              <option value="Ativo" selected>Ativo</option>
+              <option value="Inativo">Inativo</option>
+            </select>
+
+            <label for="senhaColaborador">Senha:</label>
+            <input type="password" id="senhaColaborador" name="senhaColaborador" required>
+            <button type="submit" class="btn-login-modal">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProfissional" tabindex="-1" aria-labelledby="modalProfissionalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProfissionalLabel">Cadastrar Profissional</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formProfissional">
+            <label for="nomeProfissional">Nome:</label>
+            <input type="text" id="nomeProfissional" name="nomeProfissional" required>
+            <label for="emailProfissional">Email:</label>
+            <input type="email" id="emailProfissional" name="emailProfissional" required>
+            <label for="especialidade">Especialidade:</label>
+            <select id="especialidade" name="especialidade">
+              <option value="Administrativo">Administrativo</option>
+              <option value="Financeiro">Financeiro</option>
+              <option value="Recursos Humanos (RH)">Recursos Humanos (RH)</option>
+              <option value="Comercial">Comercial</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Produção">Produção</option>
+              <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+            </select>
+            <label for="statusProfissional">Status:</label>
+            <select id="statusProfissional" name="statusProfissional">
+              <option value="Ativo">Ativo</option>
+              <option value="Inativo">Inativo</option>
+            </select>
+            <label for="senhaProfissional">Senha:</label>
+            <input type="password" id="senhaProfissional" name="senhaProfissional" required>
+            <button type="submit" class="btn-login-modal">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Edição de Colaborador -->
+  <div class="modal fade" id="modalColaboradorEdit" tabindex="-1" aria-labelledby="modalColaboradorEditLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalColaboradorEditLabel">Editar Colaborador</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formColaboradorEdit">
+            <label for="nomeEdit">Nome:</label>
+            <input type="text" id="nomeEdit" name="nomeEdit" required>
+            <label for="emailEdit">Email:</label>
+            <input type="email" id="emailEdit" name="emailEdit" required>
+
+            <label for="departamentoEdit">Departamento:</label>
+            <select id="departamentoEdit" name="departamentoEdit" required>
+              <option value="" disabled selected>Carregando departamentos...</option>
+            </select>
+
+            <label for="statusEdit">Status:</label>
+            <select id="statusEdit" name="statusEdit">
+              <option value="Ativo">Ativo</option>
+              <option value="Inativo">Inativo</option>
+            </select>
+
+            <label for="senhaEdit">Senha (deixe em branco para não alterar):</label>
+            <input type="password" id="senhaEdit" name="senhaEdit">
+            <button type="submit" class="btn-login-modal">Atualizar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Edição de Profissional -->
+  <div class="modal fade" id="modalProfissionalEdit" tabindex="-1" aria-labelledby="modalProfissionalEditLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProfissionalEditLabel">Editar Profissional</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formProfissionalEdit">
+            <label for="nomeProfissionalEdit">Nome:</label>
+            <input type="text" id="nomeProfissionalEdit" name="nomeProfissionalEdit" required>
+            <label for="emailProfissionalEdit">Email:</label>
+            <input type="email" id="emailProfissionalEdit" name="emailProfissionalEdit" required>
+            <label for="especialidadeEdit">Especialidade:</label>
+            <select id="especialidadeEdit" name="especialidadeEdit" required>
+              <option value="" disabled selected>Carregando especialidades...</option>
+            </select>
+            <label for="statusProfissionalEdit">Status:</label>
+            <select id="statusProfissionalEdit" name="statusProfissionalEdit">
+              <option value="Ativo">Ativo</option>
+              <option value="Inativo">Inativo</option>
+            </select>
+            <label for="senhaProfissionalEdit">Senha (deixe em branco para não alterar):</label>
+            <input type="password" id="senhaProfissionalEdit" name="senhaProfissionalEdit">
+            <button type="submit" class="btn-login-modal">Atualizar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-padrao">
+      <p>© 2025 Respire Bem. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Inclua os scripts na ordem correta -->
+  <script src="../../assets/js/api.js" defer></script> <!-- Primeiro, o arquivo de configuração da API -->
+  <script src="../../assets/js/logout.js" defer></script> <!-- Script global de logout e estilização -->
+  <script src="../../assets/js/gerenciar-usuarios.js" defer></script> <!-- Segundo, o arquivo de lógica da página que depende do api.js -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #D6DEE6; /* Cor de fundo ajustada */
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000; /* Tom de azul ajustado para o menu */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3E9CB2; /* Efeito hover para o menu */
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D; /* Cor do botão "Sair" ajustada */
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2; /* Efeito na cor azul para o botão "Sair" */
+  color: white;
+}
+/*=================================================================================================================*/
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* cor de fundo opcional */
+}
+
+.main-container {
+  width: 90%;           /* aumenta a largura do container */
+  max-width: 1200px;    /* limite máximo */
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.main-container h1 {
+  color: #3E9CB2; /* Tom de azul no Olá, Empresa*/
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.main-container p {
+  font-size: 16px; /*Parágrafo na cor cinza*/
+  color: #333;
+  margin-top: 20px;
+   display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 0; /* Adiciona um espaço entre coluna e texo superior  */
+  
+}
+
+
+.coluna{
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 40px;
+    margin-top: 20px; /* Adiciona um espaço entre coluna e texo superior  */
+
+}
+/*  três colunas ( 01 )*/
+/*--------- 01 ---------*/
+.Check-in-Diário {
+    
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.Check-in-Diário h3 {
+  font-size: 0.5em;
+  color: #639D8C; /* Tom de verde ajustado */
+}
+
+.Check-in-Diário p {
+  color: #333;
+  margin-top: 10px;
+}
+
+
+
+ 

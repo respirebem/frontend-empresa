@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #3b5f5f; /* azul petróleo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Área de fundo centralizada */
+.background {
+  background-color: #eef4fc;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Container com os dois blocos */
+.container {
+  display: flex;
+  width: 800px;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Lado esquerdo */
+.left-box {
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-box .logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.left-box h2 {
+  color: #3b5f5f;
+  margin-bottom: 15px;
+}
+
+.left-box p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.voltar {
+  background-color: transparent;
+  border: 2px solid #3b5f5f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #3b5f5f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #3b5f5f;
+  color: white;
+}
+
+/* Lado direito - formulário */
+.right-box {
+  background: linear-gradient(to bottom right, #d4f0ed, #a7e1dc);
+  padding: 40px 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-box h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.right-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-box input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.right-box button {
+  padding: 10px;
+  background-color: #8bd2c5;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right-box button:hover {
+  background-color: #00796b;
+}
+/*Tela inicial da Empresa*/
+
+
+

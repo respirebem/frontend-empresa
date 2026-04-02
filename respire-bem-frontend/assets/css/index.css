@@ -1,0 +1,296 @@
+/*ESTILOS GLOBAIS E PADRÃO*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #D6DEE6; /* Cor de fundo padrão */
+  color: #333;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Adiciona padding lateral */
+}
+
+/*2. CABEÇALHO PÚBLICO*/
+
+.header-publico {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-publico .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-publico .logo {
+  max-width: 120px;
+}
+
+.header-publico .btn-login {
+  color: white;
+  background-color: #3E9CB2; /* Azul padrão */
+  border: 2px solid #3E9CB2;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header-publico .btn-login:hover {
+  background-color: #338194;
+  border-color: #338194;
+}
+
+/*SEÇÃO HERÓI (Estilo Telavita)*/
+
+.hero-section {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* Fundo branco para a seção principal */
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Para telas menores */
+}
+
+/* Coluna da Esquerda (Texto) */
+.hero-texto {
+  flex-basis: 55%; /* Ocupa 55% da largura */
+}
+
+.hero-texto h1 {
+  color: #3E9CB2; /* Azul padrão */
+  font-size: 2.8em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Coluna da Direita (Formulário) */
+.hero-form {
+  flex-basis: 40%; /* Ocupa 40% da largura */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-form h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.hero-form p {
+  font-size: 0.9em;
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-form .form-label {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.btn-submit-form {
+  background-color: #639D8C; /* Verde padrão */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.btn-submit-form:hover {
+  background-color: #4a7d6e;
+}
+
+/*SEÇÃO BENEFÍCIOS (Estilo Telavita)*/
+
+.beneficios-section {
+  padding: 60px 0;
+  background-color: #D6DEE6; /* Fundo cinza-azulado padrão */
+  text-align: center;
+}
+
+.beneficios-section h2 {
+  color: #3E9CB2; /* Azul padrão */
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficios-section .subtitulo {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  text-align: left;
+}
+
+.beneficio-item {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.beneficio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-item i {
+  font-size: 2.5em;
+  color: #3E9CB2; /* Ícones no azul padrão */
+  margin-bottom: 15px;
+}
+
+.beneficio-item h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.beneficio-item p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+/* Esta regra cuida SÓ da caixa */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  background-color: #e9ecef;
+}
+
+/* Esta regra cuida SÓ do texto (idêntica à outra tela) */
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0; /* Remove todas as margens do parágrafo */
+}
+
+/*AJUSTES RESPONSIVOS */
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-texto, .hero-form {
+    flex-basis: 100%;
+    max-width: 600px;
+  }
+  .hero-texto {
+    text-align: center;
+  }
+}
+
+/*ESTILOS DO MODAL DE LOGIN*/
+
+/* Deixa o título do modal no azul padrão do site */
+.modal-header h1 {
+  color: #3E9CB2 !important; 
+  font-size: 1.5em !important;
+  margin-bottom: 0; 
+}
+
+/* Deixa o botão "Entrar" no verde padrão do site */
+.btn-login-modal {
+  background-color: #639D8C; /* Verde padrão */
+  border-color: #639D8C;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btn-login-modal:hover {
+  background-color: #4a7d6e; /* Verde mais escuro */
+  border-color: #4a7d6e;
+}
+
+
+
+/* Estiliza a "caixa" do menu dropdown */
+.dropdown-menu {
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 5px 0; /* Espaçamento interno */
+}
+
+/* Estiliza cada item (os 3 "botões") */
+.dropdown-item {
+  display: flex;         /* Alinha o ícone e o texto */
+  align-items: center;   /* Centraliza verticalmente */
+  padding: 10px 15px;    /* Deixa o botão mais "alto" */
+  font-weight: 500;      /* Fonte um pouco mais forte */
+  color: #333;
+}
+
+/* Cor do item ao passar o mouse (hover) */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #639D8C; /* Seu Verde Padrão */
+  color: white;
+}
+
+/* Estiliza o ícone dentro do botão */
+.dropdown-item i {
+  font-size: 1.1em;
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  color: #3E9CB2;     /* Seu Azul Padrão */
+  min-width: 20px;     /* Garante alinhamento */
+}
+
+/* Muda a cor do ícone também no hover */
+.dropdown-item:hover i,
+.dropdown-item:focus i {
+  color: white;
+}
+
+
+/* =========================================
+   CORREÇÃO DO TÍTULO DO MODAL DE CONTATO
+   ========================================= */
+#modalContatoSucessoLabel {
+  color: #ffffff !important; /* Branco Forçado */
+  text-shadow: none; /* Remove sombras se houver */
+}

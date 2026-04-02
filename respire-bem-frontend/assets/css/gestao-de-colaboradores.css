@@ -1,0 +1,215 @@
+/* =========================================
+   1. ESTILOS GLOBAIS (Padrão do Site)
+   (Copiado de 'tela-inicial-empresa.css' 
+    para manter o padrão)
+   ========================================= */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  min-height: 100vh;      /* Altura mínima de 100% da janela */
+  display: flex;          /* Ativa o Flexbox */
+  flex-direction: column; /* Empilha: Cabeçalho -> Conteúdo -> Rodapé */
+  
+  /* Mantenha suas outras cores de fundo aqui, ex: */
+  background-color: #D6DEE6; 
+}
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+  color: #3E9CB2;
+  border-bottom: 2px solid #3E9CB2;
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D;
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2;
+  color: white;
+}
+
+/* Main container*/
+main {
+  flex-grow: 1; /* Isso é o que empurra o rodapé para baixo */
+  padding: 40px;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Títulos e Parágrafos Padrão */
+h1 {
+  color: #3E9CB2;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   2. ESTILOS DA PÁGINA (Gestão de Colaboradores)
+   (Estilos novos e corrigidos)
+   ========================================= */
+
+.colaborador-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar a linha em telas menores */
+  gap: 20px;       /* Espaço entre os cards */
+  margin-top: 20px;
+}
+
+.colaborador-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #3E9CB2; /* Sombra inferior azul (padrão) */
+  text-align: left;
+  transition: 0.3s ease;
+  width: 100%; /* Ocupa 100% em telas pequenas */
+
+  /* Para telas maiores, definimos 3 colunas */
+  @media (min-width: 768px) {
+    width: calc(50% - 10px); /* 2 colunas */
+  }
+  @media (min-width: 992px) {
+    width: calc(33.333% - 14px); /* 3 colunas (ajustado para o gap) */
+  }
+}
+
+.colaborador-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.colaborador-card h3 {
+  color: #000000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.colaborador-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px; /* Menos espaço entre os parágrafos */
+}
+
+/*
+ * O BOTÃO CORRIGIDO
+ * (Classe '.btn-card-modal' aplicada ao <button>)
+ */
+.btn-card-modal {
+  /* Cores padrão do botão de gestão */
+  background-color: #639D8C; 
+  border-color: #639D8C; 
+  color: white;
+  box-shadow: 2px 2px 8px rgba(99, 157, 140, 0.5);
+  
+  /* Formato */
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+
+  /* --- A CORREÇÃO DEFINITIVA --- */
+  width: auto; /* Faz o botão ter a largura do texto */
+  /* --------------------------- */
+  
+  margin-top: 15px; /* Espaço para separar do texto acima */
+}
+
+/* Efeito hover para o botão */
+.btn-card-modal:hover {
+  background-color: #4a7d6e; /* Verde mais escuro */
+  border-color: #4a7d6e;
+  color: white; /* Garante que o texto do Bootstrap não mude */
+}
+
+
+/* =========================================
+   3. AJUSTES DO MODAL (Bootstrap)
+   (Seu código original)
+   ========================================= */
+
+.modal-header h1 {
+  color: #3E9CB2 !important; 
+  font-size: 1.5em !important;
+  margin-bottom: 0; 
+}
+
+/* Esta regra cuida SÓ da caixa */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; /* Mantém o espaço de cima */
+  background-color: #e9ecef;
+}
+
+/* Esta regra cuida SÓ do texto (idêntica à outra tela) */
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0; /* Remove todas as margens do parágrafo */
+}
+
+
+
+
+
+
+

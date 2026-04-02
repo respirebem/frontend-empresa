@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- INÍCIO DA CORREÇÃO DO RODAPÉ --- */
+html {
+  height: 100%; /* <-- CORREÇÃO */
+}
+
+body {
+  background-color: #D6DEE6;
+  color: #333;
+  min-height: 100vh; /* <-- CORREÇÃO (Altura mínima da tela) */
+  display: flex; /* <-- CORREÇÃO */
+  flex-direction: column; /* <-- CORREÇÃO (Empilha) */
+}
+/* --- FIM DA CORREÇÃO --- */
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+  color: #3E9CB2;
+  border-bottom: 2px solid #3E9CB2;
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D;
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2;
+  color: white;
+}
+
+/* Main container */
+main {
+ padding: 40px;
+ flex-grow: 1; /* <-- CORREÇÃO (Faz o 'main' esticar) */
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  color: #3E9CB2; /* Cor do título */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Layout de três colunas para os profissionais */
+.tres-colunas {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.psicologa-clinica, .psiquiatria, .psicoterapeuta {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+    width: 30%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 0px #3E9CB2;
+}
+
+/* Efeito de relevo ao passar o mouse */
+.psicologa-clinica:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.psiquiatria:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.psicoterapeuta:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Estilo do botão Agendar Consulta */
+.agendar-consulta01 {
+  padding: 10px 20px;
+  box-shadow: 2px 2px 8px #639D8C;
+  background-color: #639D8C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.agendar-consulta02 {
+  padding: 10px 20px;
+  box-shadow: 2px 2px 8px #8675A2;
+  background-color: #8675A2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.agendar-consulta03 {
+  padding: 10px 20px;
+    box-shadow: 2px 2px 8px #3E9CB2;
+  background-color: #3E9CB2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+/* Efeito ao passar o mouse sobre o botão */
+.agendar-consulta:hover {
+  background-color: #3E9CB2;
+}
+
+/* Esta regra cuida SÓ da caixa */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+/* Esta regra cuida SÓ do texto */
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0;
+}
+

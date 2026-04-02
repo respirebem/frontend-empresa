@@ -1,0 +1,192 @@
+/* =========================================
+   1. ESTILOS GLOBAIS (Padrão do Site)
+   ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #D6DEE6; /* Cor de fundo padrão */
+  color: #333;
+  /* Correção do Sticky Footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-width: 120px;
+}
+
+.sair {
+  color: white;
+  background-color: #7D7D7D;
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background-color: #3E9CB2;
+  color: white;
+}
+
+main {
+  padding: 40px;
+  /* Correção do Sticky Footer */
+  flex-grow: 1;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #3E9CB2;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main > .main-container > p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   2. ESTILO PADRÃO DO MENU (Estilo Antigo c/ Sublinhado)
+   ========================================= */
+
+.header-container nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-container nav ul li {
+  margin-right: 20px; /* Mantém o espaçamento original */
+}
+
+.header-container nav ul li a {
+  color: #000000; /* Cor original do seu menu */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px; /* Espaço para o sublinhado */
+  border-bottom: 2px solid transparent; /* Borda invisível para manter o alinhamento */
+}
+
+.header-container nav ul li a:hover {
+  color: #3E9CB2; 
+  border-bottom: 2px solid #3E9CB2; /* Sublinhado azul no hover */
+}
+
+/* Regra para a página ativa (para o "Dashboard" ficar destacado) */
+.header-container nav ul li a.active {
+  color: #3E9CB2;
+  border-bottom: 2px solid #3E9CB2;
+}
+
+/* =========================================
+   3. ESTILOS DO DASHBOARD (Novos)
+   ========================================= */
+
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem em telas menores */
+  gap: 20px;       /* Espaço entre os cards */
+}
+
+/* Estilo base para todos os cards de gráfico */
+.chart-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart-card h3 {
+  color: #3E9CB2; /* Azul padrão */
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Placeholder (área cinza) para simular o gráfico */
+.chart-placeholder {
+  background-color: #f4f7f6;
+  border-radius: 8px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+  color: #aaa;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* Modificador para o card grande */
+.chart-card.full-width {
+  flex-basis: 100%;
+}
+
+/* Modificador para os cards médios */
+.chart-card.half-width {
+  flex-basis: calc(50% - 10px); /* 50% menos metade do 'gap' */
+  flex-grow: 1;
+}
+
+/* =========================================
+   4. RODAPÉ (Padrão do Site)
+   ========================================= */
+.footer-padrao {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+.footer-padrao p {
+  color: #7D7D7D;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* =========================================
+   5. AJUSTES RESPONSIVOS (Celular)
+   ========================================= */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+  }
+  
+  /* Faz os cards médios ocuparem 100% da largura no celular */
+  .chart-card.half-width {
+    flex-basis: 100%;
+  }
+
+  .chart-placeholder {
+    height: 200px; /* Diminui a altura no celular */
+  }
+}

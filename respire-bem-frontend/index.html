@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="assets/css/index.css" />
+  
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <title>Respire Bem - Saúde Mental para Empresas</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  
+<header class="header-publico">
+  <div class="header-container">
+    <img src="assets/icons/imag.01.png" alt="Logo Respire Bem" class="logo" />
+    
+    <div class="btn-group">
+      <button type="button" class="btn btn-login dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Acessar Plataforma
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li>
+          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalEmpresa">
+            <i class="bi bi-building"></i> Sou Empresa
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalProfissional">
+            <i class="bi bi-heart-pulse"></i> Sou Profissional
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalColaborador">
+            <i class="bi bi-person"></i> Sou Colaborador
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="main-container hero-container">
+      
+      <div class="hero-texto">
+        <h1>A saúde mental dos seus colaboradores impacta diretamente no seu negócio.</h1>
+        <p>Ofereça apoio psicológico de qualidade e veja a produtividade e o engajamento crescerem.</p>
+        <div class="hero-features-list">
+          <div class="hero-feature-item">
+            <i class="bi bi-graph-up-arrow"></i>
+            <span><strong>+Produtividade:</strong> Equipes saudáveis produzem mais e com mais foco.</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="bi bi-person-x"></i>
+            <span><strong>-Absenteísmo:</strong> Reduza o número de faltas e afastamentos por saúde mental.</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="bi bi-gem"></i>
+            <span><strong>+Retenção:</strong> Cuidar da sua equipe atrai e retém os melhores talentos.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-form">
+        <h3>Fale com um especialista</h3>
+        <p>Preencha os dados e agende uma demonstração gratuita.</p>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="nome">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email corporativo</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="empresa" class="form-label">Empresa</label>
+            <input type="text" class="form-control" id="empresa">
+          </div>
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone">
+          </div>
+          
+          <button type="button" class="btn-submit-form" data-bs-toggle="modal" data-bs-target="#modalContatoSucesso">
+            Solicitar Contato
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="beneficios-section">
+    <div class="main-container">
+      <h2>Uma solução completa para sua empresa</h2>
+      <p class="subtitulo">Oferecemos mais do que terapia. Oferecemos uma parceria estratégica.</p>
+      <div class="beneficios-grid">
+        <div class="beneficio-item">
+          <i class="bi bi-person-video3"></i>
+          <h3>Psicoterapia Online</h3>
+          <p>Acesso fácil a psicólogos qualificados por vídeo-chamada, com total sigilo.</p>
+        </div>
+        <div class="beneficio-item">
+          <i class="bi bi-graph-up-arrow"></i>
+          <h3>Relatórios Gerenciais</h3>
+          <p>Receba dados anônimos sobre o bem-estar da sua equipe para tomar decisões.</p>
+        </div>
+        <div class="beneficio-item">
+          <i class="bi bi-shield-check"></i>
+          <h3>Apoio 24h</h3>
+          <p>Canal de atendimento emergencial 24/7 para crises e momentos difíceis.</p>
+        </div>
+        <div class="beneficio-item">
+          <i class="bi bi-calendar-check"></i>
+          <h3>Palestras e Workshops</h3>
+          <p>Conteúdos e treinamentos sobre temas como ansiedade, burnout e liderança.</p>
+        </div>
+        <div class="beneficio-item">
+          <i class="bi bi-journal-text"></i>
+          <h3>Trilhas de Conteúdo</h3>
+          <p>Artigos, vídeos e exercícios focados no desenvolvimento pessoal e profissional.</p>
+        </div>
+        <div class="beneficio-item">
+          <i class="bi bi-bar-chart-line"></i>
+          <h3>Dashboard de RH</h3>
+          <p>Acompanhe a taxa de adesão, satisfação e principais temas abordados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-padrao">
+  <p>© 2025 Respire Bem. Todos os direitos reservados.</p>
+</footer>
+
+<div class="modal fade" id="modalContatoSucesso" tabindex="-1" aria-labelledby="modalContatoSucessoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #639D8C;">
+        <h1 class="modal-title fs-5" id="modalContatoSucessoLabel" style="color: white !important;">
+          <i class="bi bi-check-circle-fill"></i> Solicitação Recebida!
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="mt-3" style="font-size: 1.2em; font-weight: bold; color: #3E9CB2;">
+            Aguarde, um de nossos especialistas!
+        </p>
+        <p>O mesmo entrará em contato em breve.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEmpresa" tabindex="-1" aria-labelledby="modalEmpresaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalEmpresaLabel">Login da Empresa (RH)</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmailEmpresa" class="form-label">Email Corporativo</label>
+            <input type="email" class="form-control" id="loginEmailEmpresa" placeholder="seu.nome@empresa.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginSenhaEmpresa" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="loginSenhaEmpresa" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="lembrarEmpresa">
+            <label class="form-check-label" for="lembrarEmpresa">Lembrar-me</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-login-modal">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalProfissional" tabindex="-1" aria-labelledby="modalProfissionalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalProfissionalLabel">Login do Profissional</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmailProfissional" class="form-label">Email Profissional</label>
+            <input type="email" class="form-control" id="loginEmailProfissional" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginSenhaProfissional" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="loginSenhaProfissional" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-login-modal">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalColaborador" tabindex="-1" aria-labelledby="modalColaboradorLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalColaboradorLabel">Login do Colaborador</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmailColaborador" class="form-label">Seu Email</label>
+            <input type="email" class="form-control" id="loginEmailColaborador" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginSenhaColaborador" class="form-label">Senha</labeL>
+            <input type="password" class="form-control" id="loginSenhaColaborador" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-login-modal">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- INCLUSÃO DOS NOVOS SCRIPTS DE AUTENTICAÇÃO -->
+<script src="assets/js/api.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>

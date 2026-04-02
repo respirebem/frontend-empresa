@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../../assets/css/gestao-de-colaboradores.css" />
+    
+    <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon" />
+    <title>Gestão de Colaboradores - Respire Bem</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+        <img src="../../assets/icons/imag.01.png" alt="Logo Respire Bem" class="logo" />
+        <nav>
+            <ul>
+            <li><a href="tela-inicial-profissional.html">Página Inicial</a></li>
+            <li><a href="dashboard-pacientes.html">Dashboard</a></li>
+            <li><a href="gestao-de-pacientes.html#">Gestão de Pacientes</a></li>
+            </ul>
+        </nav>
+        <a href="../index.html#" class="sair">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+        
+        <h1>Histórico de Checking</h1>
+        <p>Acompanhe o histórico de checking dos seus pacientes.</p>
+
+        <div class="colaborador-list">
+
+            <div class="colaborador-card">
+            <h3>Ana Silva</h3>
+            <p>Departamento: Consultora de Vendas</p>
+            <p>Último checking: 21/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalAnaSilva">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>André Mendes</h3>
+            <p>Departamento: Consultor de Vendas</p>
+            <p>Último checking: 23/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalAndreMendes">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Bruno Costa</h3>
+            <p>Departamento: Desenvolvedor Front-End</p>
+            <p>Último checking: 21/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalBrunoCosta">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Carla Mendes</h3>
+            <p>Departamento: Analista de RH</p>
+            <p>Último checking: 20/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalCarlaMendes">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Diego Fernandes</h3>
+            <p>Departamento: Gerente de Projetos</p>
+            <p>Último checking: 21/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalDiegoFernandes">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Elisa Moreira</h3>
+            <p>Departamento: Designer UX/UI</p>
+            <p>Último checking: 20/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalElisaMoreira">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Fábio Lima</h3>
+            <p>Departamento: Analista de Suporte</p>
+            <p>Último checking: 23/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalFabioLima">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Gabriela Souza</h3>
+            <p>Departamento: Marketing Digital</p>
+            <p>Último checking: 22/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalGabrielaSouza">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Hugo Rocha</h3>
+            <p>Departamento: Desenvolvedor Backend</p>
+            <p>Último checking: 23/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalHugoRocha">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Isabela Barros</h3>
+            <p>Departamento: Especialista em SEO</p>
+            <p>Último checking: 22/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalIsabelaBarros">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Júlio Farias</h3>
+            <p>Departamento: Analista de Dados</p>
+            <p>Último checking: 23/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalJulioFarias">
+                Ver Histórico
+            </button>
+            </div>
+
+            <div class="colaborador-card">
+            <h3>Larissa Pinto</h3>
+            <p>Departamento: Product Owner</p>
+            <p>Último checking: 23/10/2025</p>
+            <button type="button" class="btn btn-card-modal" data-bs-toggle="modal" data-bs-target="#modalLarissaPinto">
+                Ver Histórico
+            </button>
+            </div>
+
+        </div> </div> </main>
+
+
+    <div class="modal fade" id="modalAnaSilva" tabindex="-1" aria-labelledby="modalAnaSilvaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalAnaSilvaLabel">Histórico - Ana Silva</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Ana Silva.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>21/10/2025 - 17:55</td>
+                <td>Bem (4/5)</td>
+                <td>"Um pouco cansada, mas tive um dia produtivo."</td>
+                </tr>
+                <tr>
+                <td>20/10/2025 - 09:10</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Iniciando mais um dia um pouco desanimada, porém acredito que o dia será bom"</td>
+                </tr>
+                <tr>
+                <td>19/10/2025 - 12:42</td>
+                <td>Bem (4/5)</td>
+                <td>"Aproveitando o descanso no intervalo"</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAndreMendes" tabindex="-1" aria-labelledby="modalAndreMendesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalAndreMendesLabel">Histórico - André Mendes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do André Mendes.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>23/10/2025 - 10:15</td>
+                <td>Bem (4/5)</td>
+                <td>"Reunião boa com cliente novo."</td>
+                </tr>
+                <tr>
+                <td>22/10/2025 - 09:00</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Trânsito hoje estava complicado, cheguei um pouco atrasado."</td>
+                </tr>
+                <tr>
+                <td>21/10/2025 - 18:00</td>
+                <td>Ótimo (5/5)</td>
+                <td>"Fechei uma venda grande! Muito feliz."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBrunoCosta" tabindex="-1" aria-labelledby="modalBrunoCostaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalBrunoCostaLabel">Histórico - Bruno Costa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do Bruno Costa.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>21/10/2025 - 09:05</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Corrigindo um bug chato que apareceu no deploy de ontem."</td>
+                </tr>
+                <tr>
+                <td>20/10/2025 - 15:30</td>
+                <td>Bem (4/5)</td>
+                <td>"Consegui implementar a nova feature de login. Dia rendeu."</td>
+                </tr>
+                <tr>
+                <td>19/10/2025 - 11:00</td>
+                <td>Ótimo (5/5)</td>
+                <td>"Dia focado, consegui adiantar bastante coisa."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCarlaMendes" tabindex="-1" aria-labelledby="modalCarlaMendesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCarlaMendesLabel">Histórico - Carla Mendes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Carla Mendes.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>20/10/2025 - 10:00</td>
+                <td>Bem (4/5)</td>
+                <td>"Entrevistas agendadas para a parte da tarde."</td>
+                </tr>
+                <tr>
+                <td>19/10/2025 - 16:45</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Muita papelada para organizar, fechamento do mês."</td>
+                </tr>
+                <tr>
+                <td>18/10/2025 - 09:30</td>
+                <td>Bem (4/5)</td>
+                <td>"Planejamento da semana concluído."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDiegoFernandes" tabindex="-1" aria-labelledby="modalDiegoFernandesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalDiegoFernandesLabel">Histórico - Diego Fernandes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do Diego Fernandes.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>21/10/2025 - 08:30</td>
+                <td>Bem (4/5)</td>
+                <td>"Daily rápida com a equipe de dev. Tudo nos trilhos."</td>
+                </tr>
+                <tr>
+                <td>20/10/2025 - 11:00</td>
+                <td>Mal (2/5)</td>
+                <td>"Cronograma do projeto está apertado, um pouco estressado."</td>
+                </tr>
+                <tr>
+                <td>19/10/2025 - 17:00</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Revisando as entregas da sprint. Alguns ajustes necessários."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalElisaMoreira" tabindex="-1" aria-labelledby="modalElisaMoreiraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalElisaMoreiraLabel">Histórico - Elisa Moreira</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Elisa Moreira.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Sentimento</th>
+                <th scope="col">Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>20/10/2025 - 11:45</td>
+                <td>Ótimo (5/5)</td>
+                <td>"Tive uma ideia ótima para a nova interface do app!"</td>
+                </tr>
+                <tr>
+                <td>19/10/2025 - 14:00</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Sessão de testes de usabilidade não foi como o esperado. Muitos ajustes."</td>
+                </tr>
+                <tr>
+                <td>18/10/2025 - 10:15</td>
+                <td>Bem (4/5)</td>
+                <td>"Criando os wireframes para a nova seção do site."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFabioLima" tabindex="-1" aria-labelledby="modalFabioLimaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalFabioLimaLabel">Histórico - Fábio Lima</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do Fábio Lima.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>23/10/2025 - 11:30</td>
+                <td>Mal (2/5)</td>
+                <td>"Muitos tickets acumulados, dia bem corrido e estressante."</td>
+                </tr>
+                <tr>
+                <td>22/10/2025 - 15:10</td>
+                <td>Bem (4/5)</td>
+                <td>"Resolvi um problema crítico de um cliente grande. Foi bom."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGabrielaSouza" tabindex="-1" aria-labelledby="modalGabrielaSouzaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalGabrielaSouzaLabel">Histórico - Gabriela Souza</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Gabriela Souza.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>22/10/2025 - 15:00</td>
+                <td>Ótimo (5/5)</td>
+                <td>"Campanha nova no ar, resultados iniciais estão muito bons!"</td>
+                </tr>
+                <tr>
+                <td>21/10/2025 - 10:00</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Analisando métricas da campanha passada, CPL um pouco alto."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHugoRocha" tabindex="-1" aria-labelledby="modalHugoRochaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalHugoRochaLabel">Histórico - Hugo Rocha</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do Hugo Rocha.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>23/10/2025 - 09:45</td>
+                <td>Bem (4/5)</td>
+                <td>"Refatorando a API de pagamentos. Está ficando bom."</td>
+                </tr>
+                <tr>
+                <td>22/10/2025 - 14:30</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Investigando um problema de performance no banco de dados."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIsabelaBarros" tabindex="-1" aria-labelledby="modalIsabelaBarrosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalIsabelaBarrosLabel">Histórico - Isabela Barros</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Isabela Barros.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>22/10/2025 - 10:30</td>
+                <td>Bem (4/5)</td>
+                <td>"Estudo de palavras-chave para o novo blog concluído."</td>
+                </tr>
+                <tr>
+                <td>21/10/2025 - 16:15</td>
+                <td>Bem (4/5)</td>
+                <td>"Otimizando as tags de título dos posts antigos. Trabalho manual."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalJulioFarias" tabindex="-1" aria-labelledby="modalJulioFariasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalJulioFariasLabel">Histórico - Júlio Farias</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings do Júlio Farias.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>23/10/2025 - 14:20</td>
+                <td>Intermediário (3/5)</td>
+                <td>"Limpando a base de dados para gerar o relatório trimestral. Muitos dados sujos."</td>
+                </tr>
+                <tr>
+                <td>22/10/2025 - 11:00</td>
+                <td>Bem (4/5)</td>
+                <td>"Encontrei um insight bem interessante nos dados de vendas por região."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLarissaPinto" tabindex="-1" aria-labelledby="modalLarissaPintoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLarissaPintoLabel">Histórico - Larissa Pinto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Aqui você verá o histórico completo de checkings da Larissa Pinto.</p>
+            <table class="table table-striped">
+            <thead>
+                <tr> <th scope="col">Data</th> <th scope="col">Sentimento</th> <th scope="col">Comentário</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>23/10/2025 - 10:00</td>
+                <td>Bem (4/5)</td>
+                <td>"Reunião de planning da próxima sprint foi bem produtiva. Time alinhado."</td>
+                </tr>
+                <tr>
+                <td>22/10/2025 - 16:30</td>
+                <td>Mal (2/5)</td>
+                <td>"As prioridades do projeto mudaram de novo. Frustrante ter que realinhar tudo."</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer-padrao">
+        <p>© 2025 Respire Bem. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../../assets/js/logout.js" defer></script>
+
+</body>
+</html>
+  
+  

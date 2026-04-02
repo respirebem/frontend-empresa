@@ -1,0 +1,205 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html { height: 100%; }
+
+body {
+  /* GARANTINDO A COR CINZA */
+  background-color: #D6DEE6 !important; 
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { max-width: 120px; }
+
+.sair {
+  color: white;
+  background-color: #7D7D7D; 
+  border: 2px solid #7D7D7D;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.sair:hover { background-color: #3E9CB2; color: white; }
+
+main {
+  padding: 40px 0; /* Padding vertical */
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* O conteúdo principal (Também travado em 1200px) */
+.main-container {
+  width: 100%;
+  max-width: 1200px; /* Mesma largura do cabeçalho */
+  margin: 0 auto;    /* Centraliza */
+  padding: 0 20px;   /* Mesma margem de segurança */
+}
+
+h1 {
+  color: #3E9CB2 !important; 
+    font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main > .main-container > p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   2. MENU
+   ========================================= */
+.header-container nav ul { display: flex; list-style: none; }
+.header-container nav ul li { margin-right: 20px; }
+.header-container nav ul li a {
+  color: #000000; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent; 
+}
+.header-container nav ul li a:hover { color: #3E9CB2; border-bottom: 2px solid #3E9CB2; }
+.header-container nav ul li a.active { color: #3E9CB2; border-bottom: 2px solid #3E9CB2; }
+
+/* =========================================
+   3. CARDS E LAYOUT
+   ========================================= */
+
+.container-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  gap: 30px;
+}
+
+/* Cards Brancos */
+.col {
+  background-color: #ffffff; 
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 0px #3E9CB2; /* Sombra Azul */
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* Card Largo (Check-in) */
+.card-destaque { grid-column: span 2; }
+
+.col h2 {
+  color: #3E9CB2 !important; 
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.col p.col-subtitulo {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   4. ITENS INTERNOS
+   ========================================= */
+.bi { font-size: 28px; margin-right: 8px; vertical-align: middle; }
+
+/* Mood Icons */
+.mood-icons { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 20px; }
+@media (max-width: 992px) { .mood-icons { grid-template-columns: repeat(3, 1fr); } }
+
+.mood {
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+  font-size: 14px; font-weight: 600; padding: 10px; border-radius: 8px;
+  cursor: pointer; transition: all 0.2s; border: 1px solid transparent;
+}
+.mood:hover { transform: translateY(-2px); filter: brightness(0.95); }
+
+/* Cores e Seleção */
+.mood.feliz { background-color: #E8F5E9; color: #1B5E20; } .mood.feliz i { color: #2E7D32; }
+.mood.feliz.selected { background-color: #2E7D32; color: white; } .mood.feliz.selected i { color: white; }
+.mood.bem { background-color: #F9FBE7; color: #827717; } .mood.bem i { color: #AFB42B; }
+.mood.bem.selected { background-color: #AFB42B; color: white; } .mood.bem.selected i { color: white; }
+.mood.neutro { background-color: #FFF3E0; color: #E65100; } .mood.neutro i { color: #F57C00; }
+.mood.neutro.selected { background-color: #F57C00; color: white; } .mood.neutro.selected i { color: white; }
+.mood.desanimado { background-color: #ECEFF1; color: #455A64; } .mood.desanimado i { color: #78909C; }
+.mood.desanimado.selected { background-color: #546E7A; color: white; } .mood.desanimado.selected i { color: white; }
+.mood.triste { background-color: #E3F2FD; color: #0D47A1; } .mood.triste i { color: #1E88E5; }
+.mood.triste.selected { background-color: #1565C0; color: white; } .mood.triste.selected i { color: white; }
+.mood.irritado { background-color: #FFEBEE; color: #B71C1C; } .mood.irritado i { color: #E53935; }
+.mood.irritado.selected { background-color: #C62828; color: white; } .mood.irritado.selected i { color: white; }
+
+/* Listas */
+.listaRecomendacao { 
+  background-color: #e3e3e3; 
+  border-left: 4px solid #5d5d5d; 
+  padding: 15px; 
+  border-radius: 6px; 
+  margin: 15px 0; 
+}
+.listaRecomendacao h3 { 
+  color: #393939; 
+  margin: 0 0 10px 0; 
+  font-size: 1.1em; 
+}
+.listaRecomendacao ul, .lista-simples { 
+  padding-left: 20px; 
+  margin: 0; 
+}
+.listaRecomendacao li, .lista-simples li {
+  margin-bottom: 5px; 
+  color: #333; 
+  font-size: 14px; }
+
+/* Inputs */
+.descricao { margin-top: auto; }
+.descricao label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
+.descricao textarea { width: 100%; padding: 10px; border: 1px solid #B7C2D0; border-radius: 8px; font-family: sans-serif; resize: vertical; min-height: 80px; background-color: #fff; }
+.descricao textarea:focus { outline: none; border-color: #3E9CB2; }
+
+/* Botões */
+.btn-primary, .btn-secondary { display: block; width: 100%; text-align: center; padding: 10px; border-radius: 8px; font-weight: bold; text-decoration: none; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+.btn-primary { background-color: #639D8C; color: white; border: none; }
+.btn-primary:hover { background-color: #4a7d6e; }
+.btn-secondary { background-color: #3E9CB2; color: white; border: none; }
+.btn-secondary:hover { background-color: #318a9b; }
+
+/* Bola */
+.respiracao-container { display: grid; place-items: center; margin: 30px 0; height: 200px; }
+.bola { width: 150px; height: 150px; background-color: #639D8C; border-radius: 50%; display: grid; place-items: center; color: white; font-weight: bold; cursor: pointer; transition: transform 0.3s ease; transform: scale(1); }
+#textoRespiracao { padding: 10px; text-align: center; }
+@keyframes respirar { 0% { transform: scale(1); } 28.5% { transform: scale(1.5); } 57% { transform: scale(1.5); } 100% { transform: scale(1); } }
+.bola.animando { animation: respirar 14s infinite ease-in-out; }
+
+/* Rodapé */
+.footer-padrao { text-align: center; padding: 20px; margin-top: 40px; background-color: #e9ecef; }
+.footer-padrao p { color: #7D7D7D; font-size: 0.9em; margin: 0; }
+
+/* Celular */
+@media (max-width: 768px) {
+  .container-main { grid-template-columns: 1fr; }
+  .card-destaque { grid-column: span 1; }
+  .mood-icons { grid-template-columns: repeat(2, 1fr); }
+}
